@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>H.K.E. Society's Institute of Pharmacy, Shahabad</title>
+  <!-- Favicon -->
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+
+     /* Preloader */
+     #preloader {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: #fff;
+      z-index: 99999;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: opacity 0.5s ease, visibility 0.5s ease;
+    }
+
+    #preloader.hidden {
+      opacity: 0;
+      visibility: hidden;
+    }
+
+    .spinner {
+      border: 8px solid #f3f3f3;
+      border-top: 8px solid #3498db;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+
+    .menu-toggle {
+      display: none;
+      font-size: 28px;
+      cursor: pointer;
+      color: #333;
+    }
+
+    @media (max-width: 768px) {
+      .navbar-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+      }
+
+      .menu-toggle {
+        display: block;
+        padding: 10px 20px;
+      }
+
+      .navbar {
+        display: none;
+        flex-direction: column;
+        background: #fff;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+      }
+
+      .navbar.show {
+        display: flex;
+      }
+
+      .navbar li {
+        border-top: 1px solid #ddd;
+      }
+
+      .navbar li a {
+        display: block;
+        padding: 12px 20px;
+      }
+
+      .dropdown-content {
+        position: static;
+        display: none;
+        background: #f9f9f9;
+      }
+
+      .dropdown:hover .dropdown-content,
+      .dropdown .dropbtn:focus + .dropdown-content {
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="spinner"></div>
+  </div>
+
+
+  <header class="header">
+    <div class="container">
+      <marquee>Welcome to H.K.E. Society's Institute of Pharmacy, Shahabad.</marquee>
+    </div>
+  </header>
+
+  <header class="site-header">
+    <div class="branding">
+      <img src="images/logo.png" class="logo" alt="Institute Logo">
+      <div class="title-group">
+        <h1>H.K.E. Society's Institute of Pharmacy, Shahabad</h1>
+      </div>
+    </div>
+
+    <!-- Mobile Responsive Menu -->
+    <nav class="navbar-container">
+      <div class="menu-toggle" id="menu-toggle">
+        <i class="fas fa-bars"></i>
+      </div>
+      <ul class="navbar" id="navbar">
+        <li><a href="index.html">Home</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropbtn">About <i class="fas fa-caret-down"></i></a>
+          <ul class="dropdown-content">
+            <li><a href="#about-college">About College</a></li>
+            <li><a href="https://hkes.edu.in/" target="_blank">About Society</a></li>
+            <li><a href="https://hkes.edu.in/management" target="_blank">Management</a></li>
+          </ul>
+        </li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="academics.html">Academic & Others</a></li>
+        <li><a href="staff.html">Staff</a></li>
+        <li><a href="gallery.html">Photo Gallery</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropbtn">Contact Us <i class="fas fa-caret-down"></i></a>
+          <ul class="dropdown-content">
+            <li><a href="#reach-us">Reach Us</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+          </ul>
+        </li>
+        <li><a href="grievance.html">Grievance Cell</a></li>
+        <li><a href="mandatory.html">Mandatory</a></li>
+        <li><a href="rti.html">R T I</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="slider">
+    <a href="courses.html">
+      <img src="images/slider.jpg" alt="Institute Slider" />
+    </a>
+  </section>
+
+  <section class="main-section" style="background: #f0f3fa;">
+    <div class="container">
+      <article class="event">
+        <h2 class="heading">Welcome</h2>
+        <div>
+          <marquee direction="up" scrollamount="4" style="height: 340px;">
+            <ul>
+              <li>
+                <i>Welcome to H.K.E. Society's Institute of Pharmacy, Shahabad</i>
+                <img src="images/new.gif" alt="New" />
+                — <a href="welcome-details.html">read more</a>
+              </li>
+            </ul>
+          </marquee>
+        </div>
+      </article>         
+
+      <article class="event">
+        <h2 class="heading">News &amp; Events</h2>
+        <div>
+          <marquee direction="up" scrollamount="4" style="height: 340px;">
+            <ul>
+              <li>
+                <i>Institute starts new academic session</i>
+                <img src="images/new.gif" alt="New" />
+                — <a href="news-events.html">more info</a>
+              </li>
+            </ul>
+          </marquee>
+        </div>
+      </article>
+
+      <article class="event">
+        <h2 class="heading">Circulars</h2>
+        <div>
+          <ul>
+            <li>
+              <a href="circulars/circular1.pdf" target="_blank"> H.K.E. Society's Circular – May 2025 </a>
+            </li>
+          </ul>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="main-section" id="about-college" style="clear: both;">
+    <div class="container about-us">
+      <h2 class="heading">About College</h2>
+      <h4>H.K.E. Society's Institute of Pharmacy, Shahabad</h4>
+      <p>
+        Hyderabad Karnataka region of the erstwhile Hyderabad State had remained educationally...
+      </p>
+    </div>
+  </section>
+
+  <section class="main-section award" id="reach-us" style="background: #f0f3fa; margin-top: 60px;">
+    <div class="container">
+      <div class="event">
+        <h2 class="heading">Reach Us</h2>
+        <div>
+          <h3>Institute of Pharmacy, Shahabad</h3>
+          <p><strong>Principal:</strong> Sri. Chandrakant D S</p>
+          <p><strong>Address:</strong> Shahabad</p>
+          <p><strong>City:</strong> Kalaburagi, India</p>
+          <p><strong>Contact no:</strong> <a href="tel:+919448585868">9448585868</a></p>
+          <p><strong>Email:</strong> <a href="mailto:ssmip.hkes@edu.in">ssmip.hkes@edu.in</a></p>
+        </div>
+      </div>
+
+      <div class="event">
+        <h2 class="heading">Institute Accreditation</h2>
+        <div>
+          <a href="images/award.jpg" target="_blank">
+            <img src="images/award.jpg" alt="Accreditation Award" />
+          </a>
+        </div>
+      </div>
+
+      <div class="event">
+        <h2 class="heading">University Certificate</h2>
+        <div>
+          <a href="images/certificate.jpg" target="_blank">
+            <img src="images/certificate.jpg" alt="Certificate" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="main-section" style="background: #fff;">
+    <div class="container">
+      <h2 class="heading">Location Map</h2>
+      <div style="overflow:hidden; border-radius: 10px;">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3812.9130530354705!2d76.92570797406471!3d17.125740010292212!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc8ef31c3981b33%3A0xa9820e9b35386c16!2sHke%20institute%20of%20pharmacy%20Shahabad!5e0!3m2!1sen!2sin!4v1749752145978!5m2!1sen!2sin"
+          width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <section class="main-section" style="margin-top: 60px;">
+    <div class="container">
+      <h2 class="heading">Social Networks</h2>
+      <div class="social-icons">
+        <a href="https://facebook.com/yourpage" class="social-icon facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://instagram.com/yourprofile" class="social-icon instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://twitter.com/yourprofile" class="social-icon twitter" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://linkedin.com/in/yourprofile" class="social-icon linkedin" target="_blank"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+  </section>
+
+    <button id="backToTop" class="backToTop" title="Go to Top">↑ Back to Top</button>
+
+  <footer class="site-footer">
+    <p>&copy; 2025 H.K.E. Society's Institute of Pharmacy, Shahabad. All rights reserved.</p>
+  </footer>
+
+  <!-- Popup Overlay -->
+  <div id="popup" class="popup-overlay">
+    <div class="popup-content">
+      <span class="close-btn" onclick="closePopup()">&times;</span>
+      <img src="images/welcome-banner.jpg" alt="Welcome Banner" />
+    </div>
+  </div>
+
+  <style>
+    .popup-overlay {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(0, 0, 0, 0.8);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+    }
+    .popup-content {
+      position: relative;
+      background: #fff;
+      padding: 10px;
+      border-radius: 12px;
+      max-width: 90%;
+      max-height: 90%;
+      animation: fadeIn 0.4s ease;
+    }
+    .popup-content img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+    .close-btn {
+      position: absolute;
+      top: 8px;
+      right: 12px;
+      font-size: 24px;
+      color: #333;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.9); }
+      to { opacity: 1; transform: scale(1); }
+    }
+  </style>
+
+<script>
+
+    // Preloader
+    window.addEventListener("load", function () {
+      const preloader = document.getElementById("preloader");
+      preloader.classList.add("hidden");
+      document.getElementById('popup').style.display = 'flex'; // Show popup after preloader
+    });
+
+    
+    // Back to top button
+    const btn = document.getElementById("backToTop");
+    window.addEventListener("scroll", () => {
+      btn.style.display = (window.scrollY > 100) ? "block" : "none";
+    });
+    btn.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+
+    // Popup show on load
+    window.addEventListener('load', function () {
+      document.getElementById('popup').style.display = 'flex';
+    });
+    function closePopup() {
+      document.getElementById('popup').style.display = 'none';
+    }
+
+    // Responsive menu toggle
+    document.getElementById("menu-toggle").addEventListener("click", function () {
+      const navbar = document.getElementById("navbar");
+      navbar.classList.toggle("show");
+    });
+  </script>
+
+
+</body>
+</html>

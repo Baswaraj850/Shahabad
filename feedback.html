@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Feedback - H.K.E. Society's Institute of Pharmacy, Shahabad</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f7fc;
+      margin: 0;
+      padding: 0;
+    }
+
+    .site-header {
+      background: #003366;
+      color: #fff;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    .site-header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+
+    .site-header a {
+      color: #ffd700;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 10px;
+      font-size: 1rem;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: auto;
+      padding: 2rem 1rem;
+    }
+
+    .form-section {
+      background: #fff;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .form-section h2 {
+      margin-top: 0;
+      color: #003366;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      margin: 1rem 0 0.5rem;
+      font-weight: bold;
+    }
+
+    input, textarea {
+      padding: 0.75rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 120px;
+    }
+
+    button {
+      margin-top: 1.5rem;
+      background-color: #003366;
+      color: #fff;
+      border: none;
+      padding: 0.75rem;
+      font-size: 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #002244;
+    }
+
+    .site-footer {
+      text-align: center;
+      background: #003366;
+      color: #fff;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <h1>Feedback Form</h1>
+    <a href="index.html">← Back to Home</a>
+  </header>
+
+  <main class="container">
+    <section class="form-section">
+      <h2>We Value Your Feedback</h2>
+      <form action="save-feedback.php" method="POST">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" placeholder="Your Name" required>
+
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="your@email.com" required>
+
+        <label for="feedback">Your Feedback</label>
+        <textarea name="feedback" id="feedback" placeholder="Enter your feedback here..." required></textarea>
+
+        <button type="submit">Submit Feedback</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2025 H.K.E. Society's Institute of Pharmacy, Shahabad. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

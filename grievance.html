@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Grievance Cell - H.K.E. Society's Institute of Pharmacy, Shahabad</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f7fc;
+      margin: 0;
+      padding: 0;
+    }
+
+    .site-header {
+      background: #003366;
+      color: #fff;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    .site-header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+
+    .site-header a {
+      color: #ffd700;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 10px;
+      font-size: 1rem;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: auto;
+      padding: 2rem 1rem;
+    }
+
+    .grievance-form {
+      background: #fff;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .grievance-form h2 {
+      margin-top: 0;
+      color: #003366;
+    }
+
+    .grievance-form label {
+      display: block;
+      margin: 1rem 0 0.5rem;
+      font-weight: bold;
+    }
+
+    .grievance-form input,
+    .grievance-form textarea {
+      width: 100%;
+      padding: 0.75rem;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1rem;
+    }
+
+    .grievance-form button {
+      margin-top: 1.5rem;
+      padding: 0.75rem 2rem;
+      background-color: #003366;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .grievance-form button:hover {
+      background-color: #00264d;
+    }
+
+    .site-footer {
+      text-align: center;
+      background: #003366;
+      color: #fff;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <h1>Grievance Redressal Cell</h1>
+    <a href="index.html">← Back to Home</a>
+  </header>
+
+  <main class="container">
+    <section class="grievance-form">
+      <h2>Submit Your Grievance</h2>
+      <form action="submit-grievance.php" method="POST">
+        <label for="name">Full Name</label>
+        <input type="text" name="name" id="name" required>
+
+        <label for="email">Email Address</label>
+        <input type="email" name="email" id="email" required>
+
+        <label for="category">Category</label>
+        <input type="text" name="category" id="category" placeholder="Student / Staff / Parent" required>
+
+        <label for="message">Grievance Details</label>
+        <textarea name="message" id="message" rows="5" required></textarea>
+
+        <button type="submit">Submit Grievance</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2025 H.K.E. Society's Institute of Pharmacy, Shahabad. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
